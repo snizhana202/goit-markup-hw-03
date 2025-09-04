@@ -4,9 +4,29 @@ body {
   color: #434455;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -31,6 +51,11 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .header-logo-part {
   color: #2e2f42;
 }
@@ -41,10 +66,26 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
+}
+
+.header-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-contacts-list {
+  padding-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-contacts-link {
@@ -52,6 +93,8 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
+  display: block;
 }
 
 .header-menu-link:hover,
@@ -61,15 +104,34 @@ a {
   color: #404bbf;
 }
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* -------------HEADER--------------- */
 
 /* -----------------MAIN-HERO------------ */
 
 .main-hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .main-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -79,6 +141,12 @@ a {
 }
 
 .main-button {
+  border-radius: 4px;
+  padding-block: 16px;
+  padding-inline: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #4d5ae5;
   font-family: inherit;
   font-weight: 500;
@@ -101,12 +169,16 @@ a {
 }
 
 .main-list {
+  padding: 120px 0;
+  display: flex;
+  gap: 24px;
 }
 
 .main-item {
 }
 
 .main-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -126,9 +198,11 @@ a {
 /* -----------------MAIN-TEAM---------------- */
 .main-team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .main-team-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -139,10 +213,17 @@ a {
 }
 
 .main-team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .main-team-item {
   background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  padding-block: 0px 32px;
+  padding-inline: 0px;
+  width: 264px;
+  height: 380px;
 }
 
 .main-team-img {
