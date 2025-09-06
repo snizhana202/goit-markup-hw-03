@@ -32,11 +32,16 @@ a {
 }
 
 .visually-hidden {
-  margin: -1px;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 /* -------------HEADER--------------- */
@@ -142,11 +147,10 @@ a {
 
 .main-button {
   border-radius: 4px;
-  padding-block: 16px;
-  padding-inline: 32px;
+  height: 56px;
+  min-width: 169px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: #4d5ae5;
   font-family: inherit;
   font-weight: 500;
@@ -169,12 +173,12 @@ a {
 }
 
 .main-list {
-  padding: 120px 0;
   display: flex;
   gap: 24px;
 }
 
 .main-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .main-subtitle {
@@ -198,7 +202,6 @@ a {
 /* -----------------MAIN-TEAM---------------- */
 .main-team {
   background-color: #f4f4fd;
-  padding: 120px 0;
 }
 
 .main-team-title {
@@ -227,9 +230,12 @@ a {
 }
 
 .main-team-img {
+  display: block;
 }
 
 .main-team-subtitle {
+  margin-top: 32px;
+  margin-bottom: 4px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -239,6 +245,8 @@ a {
 }
 
 .main-team-text {
+  margin-top: 4px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -254,6 +262,7 @@ a {
 }
 
 .main-portfolio-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -264,16 +273,25 @@ a {
 }
 
 .main-portfolio-list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 48px 24px;
 }
 
 .main-portfolio-item {
+  width: calc((100% - 2 * 24px) / 3);
+  height: 420px;
+  width: 360px;
   background-color: #fff;
 }
 
 .main-portfolio-img {
+  display: block;
 }
 
 .main-portfolio-subtitle {
+  padding-bottom: 4px;
+  padding-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -282,6 +300,8 @@ a {
 }
 
 .main-portfolio-text {
+  padding-top: 4px;
+  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -290,9 +310,14 @@ a {
 
 /* -----------------MAIN-PORTFOLIO----------------- */
 
+.section {
+  padding: 120px 0;
+}
+
 /* -----------------FOOTER-------------------- */
 
 .footer {
+  padding: 100px 0;
   background-color: #2e2f42;
 }
 
@@ -304,6 +329,8 @@ a {
 }
 
 .footer-text {
+  margin-top: 16px;
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
