@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -285,7 +289,6 @@ a {
   height: 420px;
   width: 360px;
   background-color: #fff;
-  border: 1px solid #e7e9fc;
 }
 
 .main-portfolio-img {
@@ -294,6 +297,8 @@ a {
 
 .main-portfolio-card {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .main-portfolio-subtitle {
