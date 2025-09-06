@@ -283,6 +283,7 @@ a {
   height: 420px;
   width: 360px;
   background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .main-portfolio-img {
